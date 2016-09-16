@@ -1,0 +1,11 @@
+{
+  "name": "meteor-boilerplate",
+  "description": "Boilerplate application in Meteor.js",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  }
+}

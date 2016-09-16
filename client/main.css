@@ -1,0 +1,18 @@
+body {
+  font-family: ProximaNovaSoft-Bold;
+}
+
+#product-hr {
+  background: url('images/productdiv.png') no-repeat scroll center;
+  height: 5px;
+}
+
+footer {
+  position:fixed;
+  color: #999;
+  bottom:0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: white;
+}

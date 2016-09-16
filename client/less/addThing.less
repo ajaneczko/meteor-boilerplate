@@ -1,0 +1,104 @@
+@import "./variables.less";
+
+.newThing {
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 25px;
+    color: black;
+  }
+
+  p {
+    color: @secondary-color;
+    font-size: 20px;
+    margin: 30px 0px 30px 0px;
+  }
+
+  input {
+    margin:10px 0 20px 0;
+    margin-top: 10px;
+    box-shadow: inset 0px 0px 0px 0px red;
+    border-radius:0;
+    border:0;
+    color: @secondary-color;
+    box-shadow:0;
+
+    /* Line: */
+    border-bottom: 1px solid rgba(150,150,150,0.13);
+    font-size: 15px;
+    opacity: 0.6;
+    padding: 12px 0 20px 0;
+    width: 100%;
+    line-height: 0.7;
+    transition: all 0.35s ease-in-out;
+  }
+
+  ::-webkit-input-placeholder {
+     color: @secondary-color;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: @secondary-color;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: @secondary-color;
+  }
+
+  :-ms-input-placeholder {
+     color: @secondary-color;
+  }
+
+
+  [placeholder]:focus::-webkit-input-placeholder {
+     color: @awesome-primary-color !important;
+  }
+
+  [placeholder]:focus::-moz-placeholder { /* Firefox 18- */
+     color: @awesome-primary-color;
+  }
+
+  [placeholder]:focus::-moz-placeholder {  /* Firefox 19+ */
+     color: @awesome-primary-color;
+  }
+
+  [placeholder]:focus::-ms-input-placeholder{
+     color: @awesome-primary-color;
+  }
+
+
+  input:focus {
+    border-bottom: 1px solid @awesome-primary-color;
+    box-shadow:0;
+    font-size: 22px;
+    color: @awesome-primary-color;
+    opacity: 1;
+  }
+
+  input::focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  input:active,
+  input:focus,
+  input.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  button {
+    margin: 20px 0 20px 0;
+    padding: 10px 30px 10px 30px;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    border:0px;
+    color:white;
+    font-size: 20px;
+    background-color: @awesome-primary-color;
+    border-radius: 4px;
+  }
+}

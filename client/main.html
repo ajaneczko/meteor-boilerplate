@@ -1,0 +1,46 @@
+<template name="main">
+    <div class="herounit">
+      <div class="container">
+        <div class="row">
+            {{>header}}
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-12">
+                  <br>
+                  <br>
+                  {{>awesomeThings}}
+                  {{>newThing}}
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 ">
+                  {{>footer}}
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+  </div>
+</template>
+<template name="awesomeThings">
+    {{#each things}}
+      <a class="thing"><p>{{name}}</p></a>
+    {{/each}}
+</template>
+<template name="newThing">
+  <div class="newThing">
+      <h5>Add new awesome thing</h5>
+      <input id="new-thing-name" type="text" placeholder="Type new awesome thing">
+      <button id="new-thing-submit">Add thing</button>
+  </div>
+</template>
+<template name="me">
+  <div class="me-wrapper">
+    <h1>Awesome Things</h1>
+    <p> </p>
+  </div>
+</template>
